@@ -21,12 +21,10 @@
 
     <TextView
         android:id="@+id/facaPedido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/EstiloTexto"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:text="@string/fazer_pedido"
-        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
         tools:ignore="TextContrastCheck" />
@@ -42,7 +40,7 @@
         android:hint="@string/nome_cliente"
         android:inputType="textPersonName"
         android:text="@string/nome_cliente"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/facaPedido" />
 
@@ -61,7 +59,6 @@
         android:layout_width="127dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
         android:text="@string/igrediente_orion"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/igrediente3" />
@@ -71,19 +68,16 @@
         android:layout_width="98dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
         android:text="@string/igrediente_queijo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/igrediente1" />
 
     <TextView
         android:id="@+id/quantidade"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/EstiloTexto"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:text="@string/quantidade"
-        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/igrediente2" />
 
@@ -92,7 +86,6 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
         android:text="@string/subtrair_quantidade"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/quantidade" />
@@ -101,8 +94,8 @@
         android:id="@+id/valorQuantidade"
         android:layout_width="27dp"
         android:layout_height="27dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="9dp"
         android:gravity="center"
         android:text="@string/valor_quantidade"
         android:textSize="18sp"
@@ -114,31 +107,24 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="4dp"
         android:text="@string/adicionar_quantidade"
         app:layout_constraintStart_toEndOf="@+id/valorQuantidade"
         app:layout_constraintTop_toBottomOf="@+id/quantidade" />
 
     <TextView
         android:id="@+id/pedido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="8dp"
+        style="@style/EstiloTexto"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
         android:text="@string/resumo_pedido"
-        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subtrairQuantidade" />
 
     <TextView
         android:id="@+id/valor_pedido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/EstiloTexto"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="10dp"
         android:text="@string/valor_pedido"
-        android:textSize="18sp"
-        android:textAllCaps="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pedido" />
 
